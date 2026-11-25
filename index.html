@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Trening personalny, fizjoterapia i neurolog w Gdyni | Gymmy More</title>
+<meta name="description" content="Gymmy More w Gdyni, ul. Władysława IV 59: trening personalny, przygotowanie motoryczne, fizjoterapia, gabinet neurologiczny i symulator golfa Trackman IO. Pn-sob 6:00-21:00, tel. 884 868 681.">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="img/icon.png" type="image/png">
+<link rel="preload" href="fonts/BarlowCondensed-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/hero-tel.webp" as="image" media="(max-width:767px)">
+<link rel="preload" as="image" href="img/hero-1920.webp" imagesrcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" imagesizes="100vw" media="(min-width:768px)">
+<style>
+@font-face{font-family:Barlow;font-weight:400;font-display:swap;src:url(fonts/Barlow-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122}
+@font-face{font-family:Barlow;font-weight:400;font-display:swap;src:url(fonts/Barlow-400-latin-ext.woff2) format("woff2");unicode-range:U+0100-02AF,U+1E00-1EFF}
+@font-face{font-family:Barlow;font-weight:600;font-display:swap;src:url(fonts/Barlow-600-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122}
+@font-face{font-family:Barlow;font-weight:600;font-display:swap;src:url(fonts/Barlow-600-latin-ext.woff2) format("woff2");unicode-range:U+0100-02AF,U+1E00-1EFF}
+@font-face{font-family:BarlowC;font-weight:700;font-display:swap;src:url(fonts/BarlowCondensed-700-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122}
+@font-face{font-family:BarlowC;font-weight:700;font-display:swap;src:url(fonts/BarlowCondensed-700-latin-ext.woff2) format("woff2");unicode-range:U+0100-02AF,U+1E00-1EFF}
+:root{--or:#FE5B2C;--or2:#E04614;--cz:#111111;--sz:#F2F3F5;--tx:#3B3F46;--li:#E1E3E8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:68px}
+body{margin:0;font-family:Barlow,system-ui,sans-serif;color:var(--cz);background:#fff;font-size:17px;line-height:1.6}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{width:min(1200px,100% - 48px);margin-inline:auto}
+h1,h2,h3{font-family:BarlowC,Barlow,sans-serif;font-weight:700;line-height:1.02;margin:0;letter-spacing:-.005em}
+h2{font-size:clamp(34px,4.4vw,56px)}
+h3{font-size:26px;line-height:1.08}
+p{margin:0 0 1em;color:var(--tx)}
+:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+
+/* zygzak M ze znaku G */
+.zz{display:block;width:74px;height:16px;margin:18px 0 0;color:var(--or)}
+.zz path{fill:none;stroke:currentColor;stroke-width:3.2;stroke-linejoin:miter;stroke-linecap:square}
+.tyt{max-width:760px;margin-bottom:46px}
+.tyt p{margin:20px 0 0;font-size:19px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:0 26px;border-radius:4px;font:600 17px/1.15 Barlow,sans-serif;text-decoration:none;border:2px solid var(--or);background:var(--or);color:#fff;transition:background .2s,border-color .2s,color .2s;text-align:center}
+.btn:hover{background:var(--or2);border-color:var(--or2)}
+.btn-jasny{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-jasny:hover{background:#fff;color:var(--cz);border-color:#fff}
+.btn small{display:block;font-weight:400;font-size:14px;opacity:.85}
+.btn .zy{width:20px;height:10px;flex:none}
+.btn .zy path{fill:none;stroke:currentColor;stroke-width:2.4}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:40;background:var(--cz);color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.logo img{width:186px;height:auto}
+.menu{display:flex;align-items:center;gap:28px}
+.menu a{text-decoration:none;font-size:16px;font-weight:600;color:#E9E9E9}
+.menu a:not(.btn):hover{color:var(--or)}
+.menu .btn{min-height:44px;padding:0 18px;font-size:16px;color:#fff}
+.burger{display:none;width:48px;height:48px;border:0;background:none;padding:12px;cursor:pointer}
+.burger i{display:block;height:2px;background:#fff;margin:6px 0;transition:transform .2s,opacity .2s}
+.top.otw .burger i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.top.otw .burger i:nth-child(2){opacity:0}
+.top.otw .burger i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* pierwszy ekran */
+.hero{position:relative;background:var(--cz);color:#fff;overflow:hidden}
+.hero-foto{position:absolute;inset:0}
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:62% 30%}
+.hero-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,17,.88) 0,rgba(17,17,17,.62) 34%,rgba(17,17,17,.08) 62%,rgba(17,17,17,0) 100%),linear-gradient(0deg,rgba(17,17,17,.7) 0,rgba(17,17,17,0) 38%)}
+.hero-in{position:relative;z-index:2;min-height:min(calc(100svh - 68px),900px);display:flex;flex-direction:column;justify-content:flex-end;padding-block:64px 92px}
+.hero-tx{max-width:640px}
+.hero h1{font-size:clamp(44px,5.6vw,80px)}
+.hero-lead{color:#E4E4E4;font-size:20px;margin:24px 0 34px;max-width:560px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:14px}
+.godz{margin:26px 0 0;font-size:15.5px;color:#CFCFCF}
+.godz b{color:#fff;font-weight:600}
+.hero-kr{position:absolute;left:0;right:0;bottom:0;z-index:2;height:34px;color:var(--or);pointer-events:none}
+.hero-kr svg{width:100%;height:100%;display:block}
+
+/* oferta */
+.sek{padding-block:clamp(76px,9vw,124px)}
+.szary{background:var(--sz)}
+.oferta{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.of{display:flex;flex-direction:column;background:#fff;text-decoration:none}
+.of .fot{position:relative;overflow:hidden;aspect-ratio:4/3;background:#222}
+.of .fot img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.of:hover .fot img{transform:scale(1.03)}
+.of .tx{padding:24px 26px 28px;border-top:4px solid var(--or);flex:1}
+.of p{margin:10px 0 0;font-size:16px}
+.przesun{display:none;font-size:14px;color:#6A6E76;margin:14px 0 0}
+
+/* sala */
+.sala{position:relative;color:#fff;background:var(--cz)}
+.sala picture img{width:100%;height:min(78vh,820px);min-height:520px;object-fit:cover;object-position:30% 50%}
+.sala-tx{position:absolute;inset:auto 0 0 0;padding-block:0 64px;background:linear-gradient(0deg,rgba(17,17,17,.86) 0,rgba(17,17,17,.55) 55%,rgba(17,17,17,0) 100%)}
+.sala-tx .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end;padding-top:120px}
+.sala-tx h2{font-size:clamp(40px,5vw,68px)}
+.sala-tx p{color:#E2E2E2;margin:0;font-size:18px}
+.sala-tx .zz{color:var(--or)}
+
+/* zespol - ciemna */
+.ciemna{background:var(--cz);color:#fff}
+.ciemna p{color:#C9C9C9}
+.zespol-g{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px;align-items:start}
+.zespol-g .tyt{margin:0}
+.pas{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;scrollbar-width:thin;scrollbar-color:var(--or) #2A2A2A;cursor:grab;-webkit-overflow-scrolling:touch}
+.pas.ciag{cursor:grabbing;scroll-snap-type:none}
+.os{flex:0 0 auto;width:236px;scroll-snap-align:start;user-select:none}
+.os img{width:100%;aspect-ratio:4/5;object-fit:cover;-webkit-user-drag:none;pointer-events:none}
+.os h3{font-size:24px;margin:16px 0 4px}
+.os .rola{display:block;color:var(--or);font-weight:600;font-size:15px;margin-bottom:8px}
+.os p{font-size:15px;margin:0}
+.pas-nav{display:flex;gap:10px;margin-top:18px}
+.pas-nav button{width:52px;height:44px;border:1.5px solid #444;background:none;color:#fff;cursor:pointer;display:grid;place-items:center}
+.pas-nav button:hover{border-color:var(--or);color:var(--or)}
+.pas-nav svg{width:22px;height:12px}
+.pas-nav path{fill:none;stroke:currentColor;stroke-width:2.2}
+
+/* golf */
+.blok{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:60px;align-items:center}
+.blok .bf img{width:100%}
+.lista{list-style:none;padding:0;margin:22px 0 26px}
+.lista li{position:relative;padding-left:34px;margin:0 0 12px;color:var(--tx)}
+.lista li::before{content:"";position:absolute;left:0;top:.42em;width:20px;height:10px;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'%3E%3Cpath d='M1 9 7 2l5 5 7-6' fill='none' stroke='%23FE5B2C' stroke-width='2.4'/%3E%3C/svg%3E")}
+.lista b{color:var(--cz)}
+.instr{border-left:4px solid var(--or);padding:4px 0 4px 18px;margin:0 0 28px;font-size:16px}
+.instr b{display:block;color:var(--cz);font-size:17px}
+
+/* opinie */
+.opinie{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.op{background:#fff;padding:30px 30px 28px;border-top:4px solid var(--cz)}
+.op p{font-size:17px;color:var(--cz)}
+.op span{display:block;font-weight:600;color:#6A6E76;font-size:15px}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:1fr 1fr;gap:52px}
+.dane{display:grid;grid-template-columns:1fr 1fr;gap:26px 28px;margin:0 0 30px}
+.dane div{border-left:4px solid var(--or);padding-left:16px}
+.dane small{display:block;font-size:14px;color:#6A6E76}
+.dane a,.dane span{font-weight:600;font-size:18px;text-decoration:none;overflow-wrap:anywhere}
+.dane a:hover{color:var(--or2)}
+.dane em{display:block;font-style:normal;font-size:14px;color:#6A6E76}
+.soc{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:28px}
+.soc a{font-size:16px;font-weight:600}
+.form{background:var(--sz);padding:32px}
+.form label{display:block;font-size:14.5px;font-weight:600;margin:0 0 6px}
+.form input,.form textarea,.form select{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1px solid #C9CDD4;border-radius:4px;margin:0 0 16px;background:#fff;color:var(--cz)}
+.form textarea{min-height:110px;resize:vertical}
+.form .zgoda{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--tx);margin:0 0 18px;font-weight:400}
+.form .zgoda input{width:auto;margin:3px 0 0}
+.form .btn{width:100%}
+.mapa{height:290px;background:var(--cz);color:#fff;position:relative;overflow:hidden}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+.mapa-z{height:100%;display:flex;flex-direction:column;justify-content:flex-end;gap:14px;padding:28px;background:linear-gradient(0deg,rgba(17,17,17,.9),rgba(17,17,17,.35)),url(img/hero-1280.webp) center/cover}
+.mapa-z b{font-size:22px}
+.mapa-z span{color:#D0D0D0;font-size:15.5px}
+.mapa-z .btn{align-self:flex-start}
+
+/* stopka */
+.stopka{background:var(--cz);color:#BDBDBD;padding:58px 0 30px;font-size:15.5px}
+.st-g{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:40px}
+.st-g img{width:170px;margin-bottom:14px}
+.stopka h4{color:#fff;margin:0 0 12px;font-size:16px;font-weight:600}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.st-d{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;margin-top:44px;padding-top:22px;border-top:1px solid #2E2E2E;font-size:14px}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+@media (max-width:1080px){
+ .menu{gap:18px}.menu a{font-size:15px}
+ .oferta,.opinie{grid-template-columns:1fr 1fr}
+ .zespol-g{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:960px){
+ .burger{display:block}
+ .menu{position:fixed;left:0;right:0;top:68px;background:var(--cz);flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 24px;transform:translateY(-130%);transition:transform .25s;max-height:calc(100svh - 68px);overflow:auto;z-index:-1}
+ .top.otw .menu{transform:none}
+ .menu a{font-size:19px;padding:14px 0;border-bottom:1px solid #2C2C2C}
+ .menu .btn{margin-top:18px;min-height:54px;border-bottom:2px solid var(--or)}
+ .blok,.kontakt{grid-template-columns:1fr;gap:40px}
+ .sala-tx .wrap{grid-template-columns:1fr;gap:18px}
+ .st-g{grid-template-columns:1fr 1fr}
+ .st-g>div:first-child{grid-column:1/-1}
+}
+@media (max-width:767px){
+ body{font-size:16.5px}
+ .wrap{width:calc(100% - 32px)}
+ .top .wrap{height:60px}
+ html{scroll-padding-top:60px}
+ .menu{top:60px;max-height:calc(100svh - 60px)}
+ .logo img{width:150px}
+ .hero-foto{inset:0 0 auto 0;height:60%}
+ .hero-foto img{object-position:50% 30%}
+ .hero-foto::after{background:linear-gradient(180deg,rgba(17,17,17,.05) 0,rgba(17,17,17,.2) 45%,rgba(17,17,17,.8) 78%,var(--cz) 100%)}
+ .hero-in{min-height:calc(100svh - 60px);padding:32px 0 44px}
+ .hero h1{font-size:clamp(34px,10vw,44px)}
+ .hero-lead{font-size:16.5px;margin:14px 0 24px}
+ .hero-btns{display:grid;grid-template-columns:1fr;gap:10px}
+ .hero-btns .btn{min-height:52px;padding:0 14px}
+ .godz{margin-top:16px;font-size:14.5px}
+ .hero-kr{height:22px}
+ .tyt{margin-bottom:32px}
+ .tyt p{font-size:17px}
+ .oferta{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-right:-16px;padding-right:16px;padding-bottom:6px}
+ .of{flex:0 0 82%;scroll-snap-align:start}
+ .of .tx{padding:20px 20px 22px}
+ .przesun{display:block}
+ .sala picture img{height:auto;min-height:0;aspect-ratio:1300/1707}
+ .sala-tx{position:static;background:var(--cz);padding:30px 0 52px}
+ .sala-tx .wrap{padding-top:0}
+ .sala picture img{aspect-ratio:1300/1300}
+ .os{width:160px}
+ .os img{aspect-ratio:1/1}
+ .os h3{font-size:20px}
+ .os h3{font-size:22px}
+ .opinie{grid-template-columns:1fr;gap:16px}
+ .op{padding:24px}
+ .dane{grid-template-columns:1fr;gap:20px}
+ .form{padding:22px 18px}
+ .mapa{height:260px}
+}
+@media (max-width:767px) and (max-height:700px){
+ .hero h1{font-size:32px}
+ .hero-lead{font-size:16px;margin:12px 0 24px}
+ .hero-in{padding:20px 0 34px}
+ .godz{margin-top:12px}
+}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+ <div class="wrap">
+  <a class="logo" href="#top" aria-label="Gymmy More - strona główna"><img src="img/logo.webp" alt="Gymmy More" width="560" height="114"></a>
+  <nav class="menu" id="menu" aria-label="Menu główne">
+   <a href="#oferta">Oferta</a>
+   <a href="#zespol">Zespół</a>
+   <a href="#golf">Symulator golfa</a>
+   <a href="#opinie">Opinie</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="btn" href="tel:+48884868681">Umów trening</a>
+  </nav>
+  <button class="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="hero-foto">
+  <picture>
+   <source media="(max-width:767px)" srcset="img/hero-tel.webp">
+   <img src="img/hero-1920.webp" srcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" sizes="100vw" width="2560" height="1707" alt="Neon Gymmy More na ścianie sali treningowej w Gdyni" fetchpriority="high">
+  </picture>
+ </div>
+ <div class="wrap hero-in">
+  <div class="hero-tx">
+   <h1>Trening personalny, fizjoterapia i neurolog w&nbsp;Gdyni</h1>
+   <p class="hero-lead">Be strong. Be more. Kameralny klub przy Władysława IV 59, w którym trenerzy z zawodowej koszykówki, fizjoterapeuta i lekarz neurolog pracują pod jednym dachem.</p>
+   <div class="hero-btns">
+    <a class="btn" href="tel:+48884868681">Umów trening: 884 868 681</a>
+    <a class="btn btn-jasny" href="tel:+48534665981">Gabinet neurologiczny: 534 665 981</a>
+   </div>
+   <p class="godz"><b>Pn-sob 6:00-21:00</b> · grafik ustalamy z każdym indywidualnie</p>
+  </div>
+ </div>
+ <div class="hero-kr" aria-hidden="true"><svg viewBox="0 0 1440 34" preserveAspectRatio="none"><path d="M0 34V26H560L590 6 616 24 646 4 676 26H1440V34Z" fill="#fff"/><path d="M0 26H560L590 6 616 24 646 4 676 26H1440" fill="none" stroke="currentColor" stroke-width="3" vector-effect="non-scaling-stroke"/></svg></div>
+</section>
+
+<section class="sek" id="oferta">
+ <div class="wrap">
+  <div class="tyt">
+   <h2>Sześć sposobów na lepszą formę i zdrowie</h2>
+   <svg class="zz" viewBox="0 0 74 16" aria-hidden="true"><path d="M2 14 22 3 36 12 54 2 72 12"/></svg>
+   <p>Trening, terapia i diagnostyka w jednym miejscu. Kiedy trener zauważy problem, fizjoterapeuta i lekarz neurolog są na miejscu, a nie na drugim końcu miasta.</p>
+  </div>
+  <div class="oferta" data-pas>
+   <a class="of" href="#kontakt">
+    <div class="fot"><img src="img/of-trening.webp" alt="Trening personalny z trenerem Gymmy More" width="900" height="675" loading="lazy"></div>
+    <div class="tx"><h3>Trening personalny</h3><p>Plan dopasowany do celu i poziomu: od pierwszych zajęć na siłowni po przygotowanie motoryczne zawodników.</p></div>
+   </a>
+   <a class="of" href="#kontakt">
+    <div class="fot"><img src="img/of-fizjo.webp" alt="Fizjoterapia w gabinecie Gymmy More" width="900" height="675" loading="lazy"></div>
+    <div class="tx"><h3>Fizjoterapia</h3><p>Rehabilitacja po urazach i praca z bólem, z indywidualnym planem terapii i powrotem do treningu.</p></div>
+   </a>
+   <a class="of" href="#kontakt">
+    <div class="fot"><img src="img/of-neurolog.webp" alt="Dr n. med. Katarzyna Puzon-Szczotka, specjalista neurolog" width="900" height="675" loading="lazy"></div>
+    <div class="tx"><h3>Gabinet neurologiczny</h3><p>Bóle głowy i migreny, bóle kręgosłupa, zaburzenia pamięci, padaczka, SM i choroba Parkinsona. Rejestracja 12:00-15:00.</p></div>
+   </a>
+   <a class="of" href="#kontakt">
+    <div class="fot"><img src="img/of-hyrox.webp" alt="Strefa treningu funkcjonalnego z linami i stojakami" width="900" height="675" loading="lazy"></div>
+    <div class="tx"><h3>Hyrox w Gymmy More</h3><p>Hyrox to nie tylko wyścig, to sprawdzian determinacji i sprawności. Przygotujemy Cię do startu.</p></div>
+   </a>
+   <a class="of" href="#kontakt">
+    <div class="fot"><img src="img/of-biznes.webp" alt="Sala treningowa Gymmy More z neonem" width="900" height="675" loading="lazy"></div>
+    <div class="tx"><h3>Oferta dla biznesu</h3><p>Przygotowanie motoryczne przedsiębiorców: trening w godzinach, które pasują do kalendarza firmy.</p></div>
+   </a>
+   <a class="of" href="#golf">
+    <div class="fot"><img src="img/of-golf.webp" alt="Symulator golfa Trackman IO w Gymmy More" width="900" height="675" loading="lazy"></div>
+    <div class="tx"><h3>Symulator golfa</h3><p>Trackman IO: analiza swingu, lekcje i przygotowanie motoryczne golfisty przez cały rok.</p></div>
+   </a>
+  </div>
+  <p class="przesun">Przesuń, żeby zobaczyć wszystkie</p>
+ </div>
+</section>
+
+<section class="sala" aria-label="Sala treningowa">
+ <picture>
+  <source media="(max-width:767px)" srcset="img/sala-tel.webp">
+  <img src="img/sala-1920.webp" srcset="img/sala-1280.webp 1280w, img/sala-1920.webp 1920w, img/sala-2560.webp 2560w" sizes="100vw" width="2560" height="1707" alt="Sala treningowa Gymmy More z napisem Be strong. Be more. na ścianie" loading="lazy">
+ </picture>
+ <div class="sala-tx">
+  <div class="wrap">
+   <div><h2>Kameralne studio, nie&nbsp;hala</h2><svg class="zz" viewBox="0 0 74 16" aria-hidden="true"><path d="M2 14 22 3 36 12 54 2 72 12"/></svg></div>
+   <p>Pierwsze piętro przy Władysława IV 59. Stojaki, liny, hantle i wolne ciężary, bez tłumu i czekania na sprzęt. Godziny treningów dopasowujemy do Twojego harmonogramu.</p>
+  </div>
+ </div>
+</section>
+
+<section class="sek ciemna" id="zespol">
+ <div class="wrap zespol-g">
+  <div class="tyt">
+   <h2>Zespół z parkietu i&nbsp;z&nbsp;gabinetu</h2>
+   <svg class="zz" viewBox="0 0 74 16" aria-hidden="true"><path d="M2 14 22 3 36 12 54 2 72 12"/></svg>
+   <p>Trenerzy, którzy przygotowywali zawodników Arki Gdynia i Anwilu Włocławek, fizjoterapeuta i lekarz neurolog. Każdy plan powstaje z myślą o zdrowiu, nie tylko o wyniku.</p>
+   <div class="pas-nav"><button type="button" aria-label="Poprzednia osoba" data-kier="-1"><svg viewBox="0 0 22 12"><path d="M21 6H2M7 1 2 6l5 5"/></svg></button><button type="button" aria-label="Następna osoba" data-kier="1"><svg viewBox="0 0 22 12"><path d="M1 6h19M15 1l5 5-5 5"/></svg></button></div>
+  </div>
+  <div class="pas" data-pas id="pas-zespol">
+   <article class="os"><img src="img/z-piotr.webp" alt="Piotr Szczotka, właściciel Gymmy More" width="600" height="750" loading="lazy"><h3>Piotr Szczotka</h3><span class="rola">Właściciel, trener motoryczny</span><p>Były koszykarz PLK i reprezentacji Polski, trener przygotowania motorycznego w Asseco Arce Gdynia, członek NSCA.</p></article>
+   <article class="os"><img src="img/z-katarzyna.webp" alt="Dr n. med. Katarzyna Puzon-Szczotka" width="600" height="750" loading="lazy"><h3>dr n. med. Katarzyna Puzon-Szczotka</h3><span class="rola">Specjalista neurolog</span><p>Bóle głowy i kręgosłupa, zaburzenia pamięci, padaczka, stwardnienie rozsiane, choroba Parkinsona.</p></article>
+   <article class="os"><img src="img/z-tomasz.webp" alt="Tomasz Cielebąk, trener" width="600" height="750" loading="lazy"><h3>Tomasz Cielebąk</h3><span class="rola">Trener, mgr wychowania fizycznego</span><p>Były reprezentant Polski w koszykówce, trener motoryczny w Arce Gdynia i VBW Gdynia.</p></article>
+   <article class="os"><img src="img/z-hubert.webp" alt="Hubert Śledziński, trener przygotowania motorycznego" width="600" height="750" loading="lazy"><h3>Hubert Śledziński</h3><span class="rola">Trener przygotowania motorycznego</span><p>Wiele lat przygotowania fizycznego Anwilu Włocławek, współpraca z reprezentacją Polski U20.</p></article>
+   <article class="os"><img src="img/z-andrzej.webp" alt="Andrzej Stupak, fizjoterapeuta i trener" width="455" height="455" loading="lazy"><h3>Andrzej Stupak</h3><span class="rola">Mgr fizjoterapii, trener</span><p>Absolwent Gdańskiego Uniwersytetu Medycznego, łączy fizjoterapię z treningiem.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="golf">
+ <div class="wrap blok">
+  <div class="bf"><img src="img/golf.webp" srcset="img/golf-800.webp 800w, img/golf.webp 1400w" sizes="(max-width:960px) 100vw, 640px" alt="Symulator golfa Trackman IO w Gymmy More w Gdyni" width="1400" height="934" loading="lazy"></div>
+  <div>
+   <h2>Symulator golfa Trackman IO</h2>
+   <svg class="zz" viewBox="0 0 74 16" aria-hidden="true"><path d="M2 14 22 3 36 12 54 2 72 12"/></svg>
+   <ul class="lista">
+    <li><b>Dla zaawansowanych:</b> technika i parametry lotu piłki w liczbach.</li>
+    <li><b>Dla początkujących:</b> nauka gry w kameralnych warunkach.</li>
+    <li><b>Dla firm:</b> eventy integracyjne i turnieje na symulatorze.</li>
+    <li><b>Przez cały rok:</b> gra i trening bez względu na pogodę, z przygotowaniem motorycznym obok.</li>
+   </ul>
+   <p class="instr"><b>Filip Kowalski</b>Asystent instruktora PGA Polska, Trackman University L1 i L2. Po każdej lekcji notatka z uwagami i ćwiczeniami.</p>
+   <a class="btn" href="tel:+48884868681">Zarezerwuj symulator: 884 868 681</a>
+  </div>
+ </div>
+</section>
+
+<section class="sek szary" id="opinie">
+ <div class="wrap">
+  <div class="tyt">
+   <h2>Co mówią klienci</h2>
+   <svg class="zz" viewBox="0 0 74 16" aria-hidden="true"><path d="M2 14 22 3 36 12 54 2 72 12"/></svg>
+  </div>
+  <div class="opinie">
+   <blockquote class="op" style="margin:0"><p>Wspaniałe miejsce do ćwiczeń prowadzone przez profesjonalistów. Doskonałe zajęcia indywidualne dopasowane przez trenerów personalnych.</p><span>Marcin Kulka</span></blockquote>
+   <blockquote class="op" style="margin:0"><p>Na kilku treningach personalnych z Piotrkiem poznałem mnóstwo nowych ćwiczeń i udoskonaliłem technikę. Piotrek bardzo trafnie dobierał obciążenia, żeby trening był wyzwaniem, ale nie przeciążył.</p><span>Jerzy Papiorek</span></blockquote>
+   <blockquote class="op" style="margin:0"><p>Super miejsce do treningu z własnym ciałem pod okiem wykwalifikowanych trenerów w miłej, przyjacielskiej atmosferze. W treningu nie ma zmiłuj, praca musi być wykonana.</p><span>Jacek Dereń</span></blockquote>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="kontakt">
+ <div class="wrap">
+  <div class="tyt">
+   <h2>Zrób pierwszy krok</h2>
+   <svg class="zz" viewBox="0 0 74 16" aria-hidden="true"><path d="M2 14 22 3 36 12 54 2 72 12"/></svg>
+   <p>Zadzwoń albo zostaw numer. Oddzwonimy i ustalimy termin treningu albo wizyty.</p>
+  </div>
+  <div class="kontakt">
+   <div>
+    <div class="dane">
+     <div><small>Klub, treningi</small><a href="tel:+48884868681">884 868 681</a><em><a href="mailto:info@gymmymore.com" style="font-size:15px;font-weight:400">info@gymmymore.com</a></em></div>
+     <div><small>Gabinet neurologiczny</small><a href="tel:+48534665981">534 665 981</a><em>rejestracja 12:00-15:00</em></div>
+     <div><small>Godziny otwarcia</small><span>pn-sob 6:00-21:00</span></div>
+     <div><small>Adres</small><span>ul. Władysława IV 59, piętro 1, 81-384 Gdynia</span></div>
+    </div>
+    <div class="soc"><a href="https://www.facebook.com/gymmymore" rel="noopener">Facebook</a><a href="https://www.instagram.com/gymmy.more/" rel="noopener">Instagram</a><a href="https://open.spotify.com/user/316rq4r22zsyybbcpauqh3xw3z7a" rel="noopener">Nasze playlisty</a></div>
+    <div class="mapa" id="mapa"><div class="mapa-z"><b>Gymmy More</b><span>ul. Władysława IV 59, piętro 1, Gdynia</span><button type="button" class="btn">Pokaż mapę dojazdu</button></div></div>
+   </div>
+   <form class="form" onsubmit="event.preventDefault();this.querySelector('.btn').textContent='Podgląd: formularz zadziała na docelowej stronie'">
+    <label for="f-i">Imię</label><input id="f-i" name="imie" autocomplete="given-name" required>
+    <label for="f-t">Telefon</label><input id="f-t" name="tel" type="tel" autocomplete="tel" required>
+    <label for="f-c">Czego dotyczy?</label>
+    <select id="f-c" name="temat"><option>Trening personalny</option><option>Fizjoterapia</option><option>Gabinet neurologiczny</option><option>Hyrox</option><option>Oferta dla firmy</option><option>Symulator golfa</option></select>
+    <label for="f-w">Wiadomość (opcjonalnie)</label><textarea id="f-w" name="wiad"></textarea>
+    <label class="zgoda"><input type="checkbox" required> Wyrażam zgodę na kontakt w sprawie zapytania. Szczegóły w polityce prywatności.</label>
+    <button class="btn" type="submit">Wyślij, oddzwonimy</button>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="wrap">
+  <div class="st-g">
+   <div><img src="img/logo.webp" alt="Gymmy More" width="560" height="114" loading="lazy"><p style="color:#BDBDBD;margin:0;max-width:300px">Trening, fizjoterapia i gabinet neurologiczny w Gdyni.</p></div>
+   <div><h4>Kontakt</h4><ul><li>ul. Władysława IV 59, piętro 1</li><li>81-384 Gdynia</li><li><a href="tel:+48884868681">884 868 681</a></li><li><a href="mailto:info@gymmymore.com">info@gymmymore.com</a></li></ul></div>
+   <div><h4>Oferta</h4><ul><li><a href="#oferta">Trening personalny</a></li><li><a href="#oferta">Fizjoterapia</a></li><li><a href="#oferta">Gabinet neurologiczny</a></li><li><a href="#golf">Symulator golfa</a></li></ul></div>
+   <div><h4>Godziny</h4><ul><li>pn-sob 6:00-21:00</li><li><a href="https://www.facebook.com/gymmymore" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/gymmy.more/" rel="noopener">Instagram</a></li></ul></div>
+  </div>
+  <div class="st-d">
+   <span>© 2026 Gymmy More · Polityka prywatności</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=gymmymore.com&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+
+<script>
+// menu mobilne
+(function(){
+ var top=document.getElementById('top'),b=top.querySelector('.burger');
+ b.addEventListener('click',function(){var o=top.classList.toggle('otw');b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu');});
+ top.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){top.classList.remove('otw');b.setAttribute('aria-expanded','false');});});
+})();
+// przeciaganie pasow mysza
+document.querySelectorAll('[data-pas]').forEach(function(p){
+ var x0=0,s0=0,ciag=false,ruch=0;
+ p.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse'||p.scrollWidth<=p.clientWidth)return;ciag=true;ruch=0;x0=e.clientX;s0=p.scrollLeft;p.classList.add('ciag');});
+ window.addEventListener('pointermove',function(e){if(ciag){ruch=Math.abs(e.clientX-x0);p.scrollLeft=s0-(e.clientX-x0);}});
+ window.addEventListener('pointerup',function(){if(ciag){ciag=false;p.classList.remove('ciag');}});
+ p.addEventListener('click',function(e){if(ruch>6){e.preventDefault();ruch=0;}},true);
+});
+// strzalki zespolu
+document.querySelectorAll('.pas-nav button').forEach(function(b){
+ b.addEventListener('click',function(){var p=document.getElementById('pas-zespol');p.scrollBy({left:(+b.dataset.kier)*254,behavior:'smooth'});});
+});
+// mapa Google dopiero na klik
+document.querySelector('#mapa button').addEventListener('click',function(){
+ document.getElementById('mapa').innerHTML='<iframe title="Mapa dojazdu do Gymmy More" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=W%C5%82adys%C5%82awa+IV+59,+81-384+Gdynia&output=embed"></iframe>';
+});
+</script>
+</body>
+</html>
